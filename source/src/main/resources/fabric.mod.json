@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "notebot",
+	"version": "${version}",
+	"name": "NoteBot",
+	"description": "適用於 Minecraft 26.2 的音符盒自動演奏、調音、歌曲預覽及錄製模組。",
+	"authors": [
+		"Minecraft Noteblock Bot"
+	],
+	"contact": {
+		"homepage": "https://github.com/TWskeletonTW/NoteBot"
+	},
+	"license": "GPL-3.0-or-later",
+	"icon": "assets/notebot/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"net.skeleton.notebot.client.NotebotClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "notebot.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "net.skeleton.notebot.client.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "SoundManagerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
