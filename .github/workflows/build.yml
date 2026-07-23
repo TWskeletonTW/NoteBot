@@ -10,9 +10,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: source
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -36,4 +33,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: NoteBot
-          path: source/build/libs/*.jar
+          path: build/libs/*.jar
